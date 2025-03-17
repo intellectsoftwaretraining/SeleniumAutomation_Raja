@@ -10,7 +10,6 @@ public class LoginTest extends TestNGBaseClass {
 	public void verifyLoginWithValidCredentials() 
 	{
 		excel.getData("TC001");
-		//_loginPage.loginWithValidUserDetails("admin", "admin", "BP Travel - Search");
 		_loginPage.loginWithValidUserDetails(map.get("UserName"),map.get("Password"),map.get("expectedTitle"));
 		sa.assertAll();
 	}
