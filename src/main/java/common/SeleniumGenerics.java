@@ -107,4 +107,11 @@ public class SeleniumGenerics {
 		PrintUtils.logMsg("Actual text from ele is :: " + actualValue);
 		return actualValue;
 	}
+	
+	public String getElementAttribute(WebElement ele, String attributeName) 
+	{
+		String actualValue = ele.getDomAttribute(attributeName);
+		PrintUtils.logMsg("Actual text from ele is :: " + actualValue);
+		return actualValue;
+	}
 }
